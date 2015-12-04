@@ -15,6 +15,13 @@ highlight NonText guibg=grey80
 highlight Constant gui=NONE guibg=grey95  
 highlight Special gui=NONE guibg=grey95  
 
+"below are One-Key compiling function
+map <F9> :!gcc -O2 -Wall -std=c89 -o %<.exe % <CR>
+imap <F9> <Esc> :!gcc -O2 -Wall -std=c89 -o %<.exe % <CR>
+vmap <F9> <Esc> :!gcc -O2 -Wall -std=c89 -o %<.exe % <CR>
+
+map <F8> :!%<.exe <CR>
+
 "below are default settings
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim

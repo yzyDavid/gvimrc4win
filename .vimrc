@@ -15,11 +15,17 @@ highlight Constant gui=NONE guibg=grey95
 highlight Special gui=NONE guibg=grey95  
 
 "below are One-Key compiling function
-map <F9> :!gcc -O2 -Wall -std=c89 -o %<.out % <CR>
-imap <F9> <Esc> :!gcc -O2 -Wall -std=c89 -o %<.out % <CR>
-vmap <F9> <Esc> :!gcc -O2 -Wall -std=c89 -o %<.out % <CR>
+map <F9> :!clang -O0 -Wall -Wextra -Weverything -g -std=c89 -o %<.out % <CR>
+imap <F9> <Esc> :!clang -O0 -Wall -Wextra -Weverything -g -std=c89 -o %<.out % <CR>
+vmap <F9> <Esc> :!clang -O0 -Wall -Wextra -Weverything -g -std=c89 -o %<.out % <CR>
+
+map <F11> :!clang -O0 -Wall -Wextra -Weverything -g -std=c++11 -o %<.out % <CR>
+imap <F11> <Esc> :!clang -O0 -Wall -Wextra -Weverything -g -std=c++11 -o %<.out % <CR>
+vmap <F11> <Esc> :!clang -O0 -Wall -Wextra -Weverything -g -std=c++11 -o %<.out % <CR>
 
 map <F8> :!./%<.out <CR>
+imap <F8> <Esc> :!./%<.out <CR>
+vmap <F8> <Esc> :!./%<.out <CR>
 
 "below are default settings
 set nocompatible

@@ -15,9 +15,9 @@ highlight Constant gui=NONE guibg=grey95
 highlight Special gui=NONE guibg=grey95  
 
 "below are One-Key compiling function
-map <F9> :!gcc -O2 -Wall -std=c89 -o %<.out % <CR>
-imap <F9> <Esc> :!gcc -O2 -Wall -std=c89 -o %<.out % <CR>
-vmap <F9> <Esc> :!gcc -O2 -Wall -std=c89 -o %<.out % <CR>
+map <F9> :!gcc -O0 -Wall -g -std=c89 -o %<.out % <CR>
+imap <F9> <Esc> :!gcc -O0 -Wall -g -std=c89 -o %<.out % <CR>
+vmap <F9> <Esc> :!gcc -O0 -Wall -g -std=c89 -o %<.out % <CR>
 
 map <F8> :!./%<.out <CR>
 

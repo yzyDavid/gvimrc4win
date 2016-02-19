@@ -7,6 +7,7 @@ set autoindent
 set nobackup
 set guifont=Consolas:h14
 "set lines=36 columns=125  
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 highlight Normal guibg=grey90  
 highlight Cursor guibg=Green guifg=NONE  
@@ -16,9 +17,9 @@ highlight Constant gui=NONE guibg=grey95
 highlight Special gui=NONE guibg=grey95  
 
 "below are One-Key compiling function
-map <F9> :!gcc -O2 -Wall -std=c89 -o %<.exe % <CR>
-imap <F9> <Esc> :!gcc -O2 -Wall -std=c89 -o %<.exe % <CR>
-vmap <F9> <Esc> :!gcc -O2 -Wall -std=c89 -o %<.exe % <CR>
+map <F9> :!gcc -O0 -Wall -g -std=c89 -o %<.exe % <CR>
+imap <F9> <Esc> :!gcc -O0 -Wall -g -std=c89 -o %<.exe % <CR>
+vmap <F9> <Esc> :!gcc -O0 -Wall -g -std=c89 -o %<.exe % <CR>
 
 map <F8> :!%<.exe <CR>
 

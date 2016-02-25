@@ -20,9 +20,9 @@ map <F9> :!clang -O0 -Wall -Wextra -Weverything -g -std=c89 -o %<.out % <CR>
 imap <F9> <Esc> :!clang -O0 -Wall -Wextra -Weverything -g -std=c89 -o %<.out % <CR>
 vmap <F9> <Esc> :!clang -O0 -Wall -Wextra -Weverything -g -std=c89 -o %<.out % <CR>
 
-map <F11> :!clang -O0 -Wall -Wextra -Weverything -g -std=c++11 -o %<.out % <CR>
-imap <F11> <Esc> :!clang -O0 -Wall -Wextra -Weverything -g -std=c++11 -o %<.out % <CR>
-vmap <F11> <Esc> :!clang -O0 -Wall -Wextra -Weverything -g -std=c++11 -o %<.out % <CR>
+map <F11> :!clang++ -O0 -Wall -Wextra -Weverything -g -std=c++11 -o %<.out % <CR>
+imap <F11> <Esc> :!clang++ -O0 -Wall -Wextra -Weverything -g -std=c++11 -o %<.out % <CR>
+vmap <F11> <Esc> :!clang++ -O0 -Wall -Wextra -Weverything -g -std=c++11 -o %<.out % <CR>
 
 map <F8> :!./%<.out <CR>
 imap <F8> <Esc> :!./%<.out <CR>

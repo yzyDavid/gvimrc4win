@@ -5,6 +5,9 @@ set tabstop=4
 set wrap
 set autoindent
 set nobackup
+
+set bg=dark
+set nobackup
 "set lines=36 columns=125  
 
 highlight Normal guibg=grey90  
